@@ -12,7 +12,7 @@
     <body>
           <h1>Registro de Usuario</h1>
 
-	<form onsubmit="return validar();" action="Check" method="POST">
+	<form class="login" onsubmit="return validar();" action="Sesion" method="POST">
             
             Nombre(s):
             <input id="nombres" type="text" name="nombre" placeholder=" Ej. Ricardo Emmanuel"><br>
@@ -27,7 +27,7 @@
             <input id="email" type="email" name="email" placeholder=" Ej. ricardotovar@gmail.com" ><br>
 
             Contraseña:
-            <input id="contraseña" type="password" name="contraseña" placeholder=" Ej. Git#1357Pfthub"><br>
+            <input id="contraseña" type="password" name="contrasena" placeholder=" Ej. Git#1357Pfthub"><br>
 			
             Fecha De Nacimiento:
             <input id="fecha" type="date" name="fecha"><br>
