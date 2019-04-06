@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Check</servlet-name>
+        <servlet-class>Controlador.Check</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sesion</servlet-name>
+        <servlet-class>Controlador.Registrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Conexion</servlet-name>
+        <servlet-class>Controlador.Conexion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Check</servlet-name>
+        <url-pattern>/Check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registrar</servlet-name>
+        <url-pattern>/Registrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Conexion</servlet-name>
+        <url-pattern>/Conexion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            -1
+        </session-timeout>
+    </session-config>
+</web-app>
