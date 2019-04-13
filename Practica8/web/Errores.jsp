@@ -6,6 +6,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Error </title>
+        <link rel = "shortcut icon" type="image/png" href = "https://www.liceoboston.edu.co/wp-content/uploads/2018/06/jsdf.png">
+    	<link rel = "stylesheet" type="text/css" href = "main.css">
     </head>
     <body>
         <h1> Algo Salió Mal, No Se Pudo Completar Tu Solicitud</h1>

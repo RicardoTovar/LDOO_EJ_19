@@ -5,12 +5,12 @@
         <servlet-class>Controlador.Check</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Sesion</servlet-name>
+        <servlet-name>Registrar</servlet-name>
         <servlet-class>Controlador.Registrar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Conexion</servlet-name>
-        <servlet-class>Controlador.Conexion</servlet-class>
+        <servlet-class>ConexionBaseDatos.Conexion</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Check</servlet-name>
@@ -26,7 +26,7 @@
     </servlet-mapping>
     <session-config>
         <session-timeout>
-            -1
+            30
         </session-timeout>
     </session-config>
 </web-app>

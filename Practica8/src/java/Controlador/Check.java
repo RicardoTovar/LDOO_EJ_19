@@ -1,6 +1,7 @@
 
 package Controlador;
 
+import ConexionBaseDatosJava.Conexion;
 import Modelo.Usuario;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -21,13 +22,14 @@ public class Check extends HttpServlet {
         String pass = request.getParameter("contrasena");
         Usuario usuario = new Usuario(user,pass);
         Conexion conexion = new Conexion();
-        boolean au = conexion.agregarUsuario(usuario);
-        
-        if(au){
-                    response.sendRedirect("Bienvenido.jsp");
+    
+        boolean vu = conexion.verificarUsuario(usuario);
+
+        if(vu){
+                response.sendRedirect("Bienvenido.jsp");
         }else{
-                 response.sendRedirect("Errores.jsp");
+                response.sendRedirect("Errores.jsp"); 
         }
         
-    }    
+    }
 }

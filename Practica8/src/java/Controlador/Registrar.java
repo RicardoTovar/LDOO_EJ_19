@@ -1,6 +1,7 @@
 
 package Controlador;
 
+import ConexionBaseDatosJava.Conexion;
 import Modelo.Usuario;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -20,7 +21,7 @@ public class Registrar extends HttpServlet {
         Usuario usuario = new Usuario(user,pass);
         Conexion conexion = new Conexion();
         boolean vu = conexion.verificarUsuario(usuario);
-
+        
         if(vu){
                 response.sendRedirect("YaRegistrado.jsp");
         }else{
@@ -28,5 +29,5 @@ public class Registrar extends HttpServlet {
                 response.sendRedirect("index.jsp"); 
         }
         
-    }
+    }    
 }
