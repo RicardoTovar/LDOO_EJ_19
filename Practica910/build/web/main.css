@@ -1,0 +1,52 @@
+
+body{
+    background-color: #f2f2f2;
+    font-family:Arial, Sans-serif, Helvetica;	
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:45px;
+    margin:20px 5px 5px;
+}
+
+.login{
+    width:500px;
+    border:2px solid gray;
+    margin:25px auto;
+    padding:20px;
+    font-size:20px;
+}
+
+input, select{
+    margin-bottom:20px;	
+    padding:10px;
+    box-sizing:border-box;
+    width:300px;
+    font-size:20px;
+	
+}
+
+#sumbit{
+    margin-bottom:0;
+    width:100%;
+    background:#3333ff;
+    color:white;
+    border:none;
+}
+
+#submit:hover{
+    background:#8080ff;
+    border:none;
+    cursor:pointer;
+}
+
+.server{
+    border:4px solid blue;
+    margin:25px 25%;
+    padding:10px 20px;
+    font-size:20px;
+    text-align:left;
+    background:#b3e6ff;
+}
